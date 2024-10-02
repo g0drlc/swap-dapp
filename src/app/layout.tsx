@@ -24,11 +24,21 @@ export const metadata: Metadata = {
 
 function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="white">
       <body className="relative">
         <Providers>
           <AppProvider>
             <TopBarDynamic />
+            {/* {children}
+            <ToastContainer
+              position="bottom-right"
+              autoClose={3000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              rtl={false}
+              draggable
+              theme="dark"
+            /> */}
           </AppProvider>
         </Providers>
       </body>
